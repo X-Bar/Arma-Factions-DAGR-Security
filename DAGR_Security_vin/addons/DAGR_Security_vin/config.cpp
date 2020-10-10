@@ -125,6 +125,7 @@ class cfgVehicles
   class I_medic_F;
   
   class B_RadioBag_01_digi_F;
+  class B_FieldPack_khk;
   
   class C_Van_02_transport_F;
   class C_Offroad_01_comms_F;
