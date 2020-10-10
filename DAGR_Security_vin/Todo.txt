@@ -26,6 +26,7 @@ X Fix motorized
 / Fix PM pistols have no ammo...
 - Fix old faces
 / Move JTAC sharpshooter team to support forces
+- Fix JTAC back to men category
 
 
 Issues
