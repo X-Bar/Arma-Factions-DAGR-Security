@@ -120,8 +120,8 @@ class cfgVehicles
   class I_crew_F;
   class I_helipilot_F;
   class I_pilot_F;
-  class B_CTRG_Soldier_JTAC_tna_F;
-  class I_G_Sharpshooter_F;
+  class B_recon_JTAC_F;
+  class B_Recon_Sharpshooter_F;
   
   class B_RadioBag_01_digi_F;
   
@@ -252,11 +252,12 @@ class cfgVehicles
     backpack="DARG_LTD_Contractor_Pilot__pack";
   };
 
-  class DARG_LTD_Contractor_JTAC: B_CTRG_Soldier_JTAC_tna_F
+  class DARG_LTD_Contractor_JTAC: B_recon_JTAC_F
   {
     faction="DARG_LTD_DARG_Security_LTD";
     side=2;
     displayName="Contractor JTAC";
+    //~ editorSubcategory="DARG_LTD_ed_men"; // how does this work?
     uniformClass="U_BG_Guerrilla_6_1";
     weapons[]={"Laserdesignator","DARG_LTD_arifle_Mk20_GL_plain_F_acc_flashlight","Put","Throw"};
     respawnWeapons[]={"Laserdesignator","DARG_LTD_arifle_Mk20_GL_plain_F_acc_flashlight","Put","Throw"};
@@ -269,7 +270,7 @@ class cfgVehicles
     backpack="DARG_LTD_Contractor_JTAC_pack";
   };
 
-  class DARG_LTD_Contractor_Sharpshooter: I_G_Sharpshooter_F
+  class DARG_LTD_Contractor_Sharpshooter: B_Recon_Sharpshooter_F
   {
     faction="DARG_LTD_DARG_Security_LTD";
     side=2;
@@ -709,19 +710,20 @@ class cfgGroups
             position[]={0,-5,0};
           };
         };
-        class DAGR_LTD_R_Offroad_Radios_Sharpshoot_and_JTAC
-        {
-          name="Offroad Radios Sharpshoot and JTAC";
-          faction="DAGR_LTD_DAGR_Security_LTD";
-          side=2;
-          class Unit0
-          {
-            side=2;
-            vehicle="DARG_LTD_Contractor_Sharpshooter";
-            rank="PRIVATE";
-            position[]={0,-0,0};
-          };
-        };
+        // BAD Declaration 
+        //~ class DAGR_LTD_R_Offroad_Radios_Sharpshoot_and_JTAC
+        //~ {
+          //~ name="Offroad Radios Sharpshoot and JTAC";
+          //~ faction="DAGR_LTD_DAGR_Security_LTD";
+          //~ side=2;
+          //~ class Unit0
+          //~ {
+            //~ side=2;
+            //~ vehicle="DARG_LTD_Contractor_Sharpshooter";
+            //~ rank="PRIVATE";
+            //~ position[]={0,-0,0};
+          //~ };
+        //~ };
       };
       class Motorized
       {
@@ -823,22 +825,29 @@ class cfgGroups
             position[]={0,-75,0};
           };
         };
-        class DAGR_LTD_R_Offroad_Radios_Sharpshoot_and_JTA
+        class DAGR_LTD_R_Offroad_Radios_Sharpshooter_and_JTAC
         {
-          name="Offroad Radios Sharpshoot and JTA";
+          name="Offroad Radios Sharpshooter and JTAC";
           faction="DAGR_LTD_DAGR_Security_LTD";
           side=2;
           class Unit0
           {
             side=2;
-            vehicle="DARG_LTD_Contractor_JTAC";
+            vehicle="DARG_LTD_Offroad_Radios";
             rank="PRIVATE";
-            position[]={0,-0,0};
+            position[]={0,0,0};
           };
           class Unit1
           {
             side=2;
-            vehicle="DARG_LTD_Offroad_Radios";
+            vehicle="DARG_LTD_Contractor_JTAC";
+            rank="PRIVATE";
+            position[]={0,-10,0};
+          };
+          class Unit2
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_Sharpshooter";
             rank="PRIVATE";
             position[]={0,-15,0};
           };
