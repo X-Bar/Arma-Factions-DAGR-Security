@@ -17,18 +17,18 @@ X Fix Offroad away from idaf
 X Add radiomen / JTAC
 X Add sharpshooter
 X Fix motorized
-/ Fix NVG from opfor
-/ Fix officer facewear
-/ Fix all groups
-- Fix reinforcement groups
-/ Fix JTAC inheritance
-/ Fix Sharpshooter inheritance
-/ Fix PM pistols have no ammo...
-- Fix old faces
-/ Move JTAC sharpshooter team to support forces
-- Fix JTAC back to men category
+X Fix NVG from opfor
+X Fix officer facewear
+X Fix all groups
+X Fix reinforcement groups
+X Fix JTAC inheritance
+X Fix Sharpshooter inheritance
+X Fix PM pistols have no ammo...
+X Fix old faces
+X Move JTAC sharpshooter team to support forces
+X Fix JTAC back to men category -> moved to special forces
 - Faction name (config.cpp) is super long...?
-
+/ Add medic
 
 Issues
 

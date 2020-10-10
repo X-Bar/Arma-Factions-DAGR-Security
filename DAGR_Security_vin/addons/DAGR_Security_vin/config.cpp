@@ -12,7 +12,7 @@ class cfgPatches
 {
   class DARG_LTD_DARG_Security_LTD
   {
-    units[]={"DARG_LTD_Officer","DARG_LTD_Squad_Leader_PDW","DARG_LTD_Contractor_PDW","DARG_LTD_Contractor_Driver_","DARG_LTD_Contractor_Crewmen","DARG_LTD_Contractor_Heli_Pilot","DARG_LTD_Contractor_Pilot_","DARG_LTD_Contractor_JTAC","DARG_LTD_Contractor_Sharpshooter","DARG_LTD_Van_Transport","DARG_LTD_Offroad_Radios","DARG_LTD_WY55_Hellcat","DARG_LTD_Cessna","DARG_LTD_Offroad","DARG_LTD_Offroad_service","DARG_LTD_Mk6_mortar"};
+    units[]={"DARG_LTD_Contractor_Combat_Medic","DARG_LTD_Officer","DARG_LTD_Squad_Leader_PDW","DARG_LTD_Contractor_PDW","DARG_LTD_Contractor_Driver_","DARG_LTD_Contractor_Crewmen","DARG_LTD_Contractor_Heli_Pilot","DARG_LTD_Contractor_Pilot_","DARG_LTD_Contractor_JTAC","DARG_LTD_Contractor_Sharpshooter","DARG_LTD_Van_Transport","DARG_LTD_Offroad_Radios","DARG_LTD_WY55_Hellcat","DARG_LTD_Cessna","DARG_LTD_Offroad","DARG_LTD_Offroad_service","DARG_LTD_Mk6_mortar"};
     weapons[]={"DARG_LTD_hgun_Pistol_heavy_02_F_acc_flashlight_pistol","DARG_LTD_hgun_PDW2000_F","DARG_LTD_hgun_ACPC2_F","DARG_LTD_hgun_Pistol_01_F","DARG_LTD_arifle_Mk20_GL_plain_F_acc_flashlight","DARG_LTD_srifle_DMR_06_hunter_F_optic_KHS_old"};
     requiredVersion=0.1;
     requiredAddons[]={"A3_Weapons_F_Items","A3_Weapons_F","A3_Weapons_F_Pistols_Pistol_Heavy_02","A3_Characters_F","A3_Weapons_F_SMGs_Pdw2000","A3_Weapons_F_Pistols_ACPC2","A3_Characters_F_Orange","A3_Weapons_F_Exp_Pistols_Pistol_01","A3_Characters_F_Exp","A3_Characters_F_Enoch_Headgear","A3_Weapons_F_Rifles_MK20","A3_Weapons_F_Enoch_LongRangeRifles_DMR_06"};
@@ -122,6 +122,7 @@ class cfgVehicles
   class I_pilot_F;
   class B_recon_JTAC_F;
   class B_Recon_Sharpshooter_F;
+  class I_medic_F;
   
   class B_RadioBag_01_digi_F;
   
@@ -285,6 +286,23 @@ class cfgVehicles
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Laserdesignator","H_Booniehat_khk_hs","V_BandollierB_khk","G_Bandanna_khk"};
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Laserdesignator","H_Booniehat_khk_hs","V_BandollierB_khk","G_Bandanna_khk"};
     backpack="DARG_LTD_Contractor_Sharpshooter_pack";
+  };
+  
+  class DARG_LTD_Contractor_Combat_Medic: I_medic_F
+  {
+    faction="DARG_LTD_DARG_Security_LTD";
+    side=2;
+    displayName="Contractor Combat Medic";
+    uniformClass="U_I_L_Uniform_01_tshirt_sport_F";
+    weapons[]={"Binocular","DARG_LTD_hgun_PDW2000_F","DARG_LTD_hgun_Pistol_01_F","Put","Throw"};
+    respawnWeapons[]={"Binocular","DARG_LTD_hgun_PDW2000_F","DARG_LTD_hgun_Pistol_01_F","Put","Throw"};
+    items[]={"FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","Medikit"};
+    respawnItems[]={"FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","Medikit"};
+    magazines[]={"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
+    respawnMagazines[]={"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Cap_usblack","V_TacVestIR_blk","G_WirelessEarpiece_F"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Cap_usblack","V_TacVestIR_blk","G_WirelessEarpiece_F"};
+    backpack="DARG_LTD_Contractor_Combat_Medic_pack";
   };
 
   class DARG_LTD_Van_Transport: C_Van_02_transport_F
@@ -514,6 +532,23 @@ class cfgVehicles
     };
     class TransportWeapons{};
   };
+  
+  class DARG_LTD_Contractor_Combat_Medic_pack: B_FieldPack_khk
+  {
+    scope=1;
+    class TransportMagazines
+    {
+     class _xx_SmokeShellBlue {count=1;magazine="SmokeShellBlue";};
+     class _xx_SmokeShell {count=2;magazine="SmokeShell";};
+     class _xx_30Rnd_9x21_Mag {count=2;magazine="30Rnd_9x21_Mag";};
+    };
+    class TransportItems
+    {
+     class _xx_FirstAidKit {count=11;name="FirstAidKit";};
+     class _xx_Medikit {count=1;name="Medikit";};
+    };
+    class TransportWeapons{};
+  };
 
 };
 
@@ -604,7 +639,7 @@ class cfgGroups
           class Unit5
           {
             side=2;
-            vehicle="DARG_LTD_Contractor_PDW";
+            vehicle="DARG_LTD_Contractor_Combat_Medic";
             rank="PRIVATE";
             position[]={0,-25,0};
           };
@@ -645,7 +680,7 @@ class cfgGroups
           class Unit4
           {
             side=2;
-            vehicle="DARG_LTD_Contractor_PDW";
+            vehicle="DARG_LTD_Contractor_Combat_Medic";
             rank="PRIVATE";
             position[]={0,-20,0};
           };
