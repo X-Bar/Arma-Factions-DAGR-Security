@@ -1,12 +1,32 @@
+MOD TAG
+DARG_LTD
+
+MOD NAME
+DARG Security LTD
+
 Todo
 
+- task incomplete 
+/ task implemented
+X task tested and complete
 
-- Shorten nametag to DS-LTD
-- Add motor
-- Fix Offroad away from idaf
-- Fix NVG from opfor
-- Add radiomen / JTAC
-- Add sharpshooter
-- Fix officer facewear
-- Fix motorized
-- Fix all groups
+
+X Shorten nametag to DS-LTD
+X Add mortar
+X Fix Offroad away from idaf
+/ Fix NVG from opfor
+X Add radiomen / JTAC
+X Add sharpshooter
+/ Fix officer facewear
+/ Fix motorized
+/ Fix all groups
+- Fix JTAC inheritance
+- FIx Sharpshooter inheritance
+- Fix PM pistols have no ammo...
+- Fix old faces
+- Move JTAC sharpshooter team to special forces
+
+
+Issues
+
+Uniform issues are rampent. Inheritieting from FIA seems to have added random gear choices 
