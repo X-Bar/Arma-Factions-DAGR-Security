@@ -3,3 +3,10 @@ Todo
 
 - Shorten nametag to DS-LTD
 - Add motor
+- Fix Offroad away from idaf
+- Fix NVG from opfor
+- Add radiomen / JTAC
+- Add sharpshooter
+- Fix officer facewear
+- Fix motorized
+- Fix all groups

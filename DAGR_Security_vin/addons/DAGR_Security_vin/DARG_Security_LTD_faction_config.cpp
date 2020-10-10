@@ -1,13 +1,3 @@
-// Author X-Bar
-// https://steamcommunity.com/profiles/76561198017283845/
-// Made using Drongo's Config Generator
-// https://steamcommunity.com/sharedfiles/filedetails/?id=1771335720
-
-// DAGR Security a poor PMC
-// vanilla version
-
-
-
 class cfgPatches
 {
   class DARG_Security_LTD_DARG_Security_LTD
@@ -25,7 +15,7 @@ class cfgFactionClasses
   {
     icon="";
     displayName="DARG Security LTD";
-    side=0;
+    side=2;
     priority=1;
   };
 };
@@ -96,7 +86,7 @@ class cfgVehicles
   class DARG_Security_LTD_Officer: I_G_officer_F
   {
     faction="DARG_Security_LTD_DARG_Security_LTD";
-    side=0;
+    side=2;
     displayName="Officer";
     uniformClass="U_Marshal";
     weapons[]={"Binocular","DARG_Security_LTD_hgun_Pistol_heavy_02_F_acc_flashlight_pistol","Put","Throw"};
@@ -113,7 +103,7 @@ class cfgVehicles
   class DARG_Security_LTD_Squad_Leader_PDW: I_G_Soldier_SL_F
   {
     faction="DARG_Security_LTD_DARG_Security_LTD";
-    side=0;
+    side=2;
     displayName="Squad Leader PDW";
     uniformClass="U_C_IDAP_Man_cargo_F";
     weapons[]={"Binocular","DARG_Security_LTD_hgun_PDW2000_F","DARG_Security_LTD_hgun_ACPC2_F","Put","Throw"};
@@ -130,7 +120,7 @@ class cfgVehicles
   class DARG_Security_LTD_Contractor_PDW: I_G_Soldier_F
   {
     faction="DARG_Security_LTD_DARG_Security_LTD";
-    side=0;
+    side=2;
     displayName="Contractor PDW";
     uniformClass="U_C_Mechanic_01_F";
     weapons[]={"Binocular","DARG_Security_LTD_hgun_PDW2000_F","DARG_Security_LTD_hgun_Pistol_01_F","Put","Throw"};
@@ -147,7 +137,7 @@ class cfgVehicles
   class DARG_Security_LTD_Contractor_Driver_: I_G_Soldier_F
   {
     faction="DARG_Security_LTD_DARG_Security_LTD";
-    side=0;
+    side=2;
     displayName="Contractor Driver";
     uniformClass="U_I_C_Soldier_Bandit_2_F";
     weapons[]={"Binocular","DARG_Security_LTD_hgun_PDW2000_F","DARG_Security_LTD_hgun_Pistol_01_F","Put","Throw"};
@@ -164,7 +154,7 @@ class cfgVehicles
   class DARG_Security_LTD_Contractor_Crewmen: I_G_Soldier_F
   {
     faction="DARG_Security_LTD_DARG_Security_LTD";
-    side=0;
+    side=2;
     displayName="Contractor Crewmen";
     uniformClass="U_C_WorkerCoveralls";
     weapons[]={"Binocular","DARG_Security_LTD_hgun_PDW2000_F","DARG_Security_LTD_hgun_Pistol_01_F","Put","Throw"};
@@ -181,7 +171,7 @@ class cfgVehicles
   class DARG_Security_LTD_Contractor_Heli_Pilot: I_G_Soldier_F
   {
     faction="DARG_Security_LTD_DARG_Security_LTD";
-    side=0;
+    side=2;
     displayName="Contractor Heli Pilot";
     uniformClass="U_C_Driver_3";
     weapons[]={"Binocular","DARG_Security_LTD_hgun_PDW2000_F","DARG_Security_LTD_hgun_Pistol_01_F","Put","Throw"};
@@ -198,7 +188,7 @@ class cfgVehicles
   class DARG_Security_LTD_Contractor_Pilot_: I_G_Soldier_F
   {
     faction="DARG_Security_LTD_DARG_Security_LTD";
-    side=0;
+    side=2;
     displayName="Contractor Pilot";
     uniformClass="U_C_Driver_3";
     weapons[]={"Binocular","DARG_Security_LTD_hgun_PDW2000_F","DARG_Security_LTD_hgun_Pistol_01_F","Put","Throw"};
@@ -215,7 +205,7 @@ class cfgVehicles
   class DARG_Security_LTD_Van_Transport: C_Van_02_transport_F
   {
     faction="DARG_Security_LTD_DARG_Security_LTD";
-    side=0;
+    side=2;
     displayName="Van Transport";
     hiddenSelectionsTextures[]={"a3\soft_f_orange\van_02\data\van_body_black_co.paa","a3\soft_f_orange\van_02\data\van_wheel_transport_co.paa","a3\soft_f_orange\van_02\data\van_glass_transport_ca.paa","a3\soft_f_orange\van_02\data\van_body_black_co.paa"};
     crew="DARG_Security_LTD_Contractor_Driver_";
@@ -225,7 +215,7 @@ class cfgVehicles
   class DARG_Security_LTD_Offroad: C_IDAP_Offroad_01_F
   {
     faction="DARG_Security_LTD_DARG_Security_LTD";
-    side=0;
+    side=2;
     displayName="Offroad";
     hiddenSelectionsTextures[]={"a3\soft_f_enoch\offroad_01\data\offroad_01_ext_grn_co.paa","a3\soft_f_enoch\offroad_01\data\offroad_01_ext_grn_co.paa"};
     crew="DARG_Security_LTD_Contractor_Driver_";
@@ -235,7 +225,7 @@ class cfgVehicles
   class DARG_Security_LTD_Offroad_Radios: C_Offroad_01_comms_F
   {
     faction="DARG_Security_LTD_DARG_Security_LTD";
-    side=0;
+    side=2;
     displayName="Offroad Radios";
     hiddenSelectionsTextures[]={"a3\soft_f_enoch\offroad_01\data\offroad_01_ext_grn_co.paa","a3\soft_f_enoch\offroad_01\data\offroad_01_ext_grn_co.paa","a3\soft_f_enoch\offroad_01\data\offroad_01_cover_grn_co.paa"};
     crew="DARG_Security_LTD_Contractor_Driver_";
@@ -245,7 +235,7 @@ class cfgVehicles
   class DARG_Security_LTD_WY55_Hellcat: I_Heli_light_03_unarmed_F
   {
     faction="DARG_Security_LTD_DARG_Security_LTD";
-    side=0;
+    side=2;
     displayName="WY55 Hellcat";
     hiddenSelectionsTextures[]={"a3\air_f_epb\heli_light_03\data\heli_light_03_base_co.paa"};
     crew="DARG_Security_LTD_Contractor_Heli_Pilot";
@@ -255,7 +245,7 @@ class cfgVehicles
   class DARG_Security_LTD_Cessna: C_Plane_Civil_01_F
   {
     faction="DARG_Security_LTD_DARG_Security_LTD";
-    side=0;
+    side=2;
     displayName="Cessna";
     hiddenSelectionsTextures[]={"a3\air_f_exp\plane_civil_01\data\btt_ext_01_wave_co.paa","a3\air_f_exp\plane_civil_01\data\btt_ext_02_wave_co.paa","a3\air_f_exp\plane_civil_01\data\btt_int_01_tan_co.paa","a3\air_f_exp\plane_civil_01\data\btt_int_02_tan_co.paa"};
     crew="DARG_Security_LTD_Contractor_Pilot_";
