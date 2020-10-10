@@ -113,11 +113,18 @@ class cfgWeapons
 
 class cfgVehicles
 {
-  class I_G_officer_F;
+  class B_officer_F;
   class B_LegStrapBag_black_F;
-  class I_G_Soldier_SL_F;
-  class I_G_Soldier_F;
+  class B_Soldier_SL_F;
+  class I_Soldier_lite_F;
+  class I_crew_F;
+  class I_helipilot_F;
+  class I_pilot_F;
+  class B_CTRG_Soldier_JTAC_tna_F;
+  class I_G_Sharpshooter_F;
+  
   class B_RadioBag_01_digi_F;
+  
   class C_Van_02_transport_F;
   class C_Offroad_01_comms_F;
   class I_Heli_light_03_unarmed_F;
@@ -126,7 +133,7 @@ class cfgVehicles
   class C_Offroad_01_repair_F;
   class I_Mortar_01_F;
 
-  class DARG_LTD_Officer: I_G_officer_F
+  class DARG_LTD_Officer: B_officer_F
   {
     faction="DARG_LTD_DARG_Security_LTD";
     side=2;
@@ -143,7 +150,7 @@ class cfgVehicles
     backpack="DARG_LTD_Officer_pack";
   };
 
-  class DARG_LTD_Squad_Leader_PDW: I_G_Soldier_SL_F
+  class DARG_LTD_Squad_Leader_PDW: B_Soldier_SL_F
   {
     faction="DARG_LTD_DARG_Security_LTD";
     side=2;
@@ -160,7 +167,7 @@ class cfgVehicles
     backpack="DARG_LTD_Squad_Leader_PDW_pack";
   };
 
-  class DARG_LTD_Contractor_PDW: I_G_Soldier_F
+  class DARG_LTD_Contractor_PDW: I_Soldier_lite_F
   {
     faction="DARG_LTD_DARG_Security_LTD";
     side=2;
@@ -170,14 +177,14 @@ class cfgVehicles
     respawnWeapons[]={"Binocular","DARG_LTD_hgun_PDW2000_F","DARG_LTD_hgun_Pistol_01_F","Put","Throw"};
     items[]={"FirstAidKit","FirstAidKit","FirstAidKit"};
     respawnItems[]={"FirstAidKit","FirstAidKit","FirstAidKit"};
-    magazines[]={"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
-    respawnMagazines[]={"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
+    magazines[]={"10Rnd_9x21_Mag","10Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
+    respawnMagazines[]={"10Rnd_9x21_Mag","10Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Cap_oli_hs","V_TacVest_blk","G_Bandanna_sport"};
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Cap_oli_hs","V_TacVest_blk","G_Bandanna_sport"};
     backpack="DARG_LTD_Contractor_PDW_pack";
   };
 
-  class DARG_LTD_Contractor_Driver_: I_G_Soldier_F
+  class DARG_LTD_Contractor_Driver_: I_crew_F
   {
     faction="DARG_LTD_DARG_Security_LTD";
     side=2;
@@ -187,14 +194,14 @@ class cfgVehicles
     respawnWeapons[]={"Binocular","DARG_LTD_hgun_PDW2000_F","DARG_LTD_hgun_Pistol_01_F","Put","Throw"};
     items[]={"FirstAidKit","FirstAidKit","FirstAidKit"};
     respawnItems[]={"FirstAidKit","FirstAidKit","FirstAidKit"};
-    magazines[]={"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
-    respawnMagazines[]={"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
+    magazines[]={"10Rnd_9x21_Mag","10Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
+    respawnMagazines[]={"10Rnd_9x21_Mag","10Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Cap_blk_CMMG","V_TacVest_blk","G_WirelessEarpiece_F"};
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Cap_blk_CMMG","V_TacVest_blk","G_WirelessEarpiece_F"};
     backpack="DARG_LTD_Contractor_Driver__pack";
   };
 
-  class DARG_LTD_Contractor_Crewmen: I_G_Soldier_F
+  class DARG_LTD_Contractor_Crewmen: I_crew_F
   {
     faction="DARG_LTD_DARG_Security_LTD";
     side=2;
@@ -204,14 +211,14 @@ class cfgVehicles
     respawnWeapons[]={"Binocular","DARG_LTD_hgun_PDW2000_F","DARG_LTD_hgun_Pistol_01_F","Put","Throw"};
     items[]={"FirstAidKit","FirstAidKit","FirstAidKit"};
     respawnItems[]={"FirstAidKit","FirstAidKit","FirstAidKit"};
-    magazines[]={"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
-    respawnMagazines[]={"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
+    magazines[]={"10Rnd_9x21_Mag","10Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
+    respawnMagazines[]={"10Rnd_9x21_Mag","10Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Tank_eaf_F","V_Rangemaster_belt","G_Lowprofile"};
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Tank_eaf_F","V_Rangemaster_belt","G_Lowprofile"};
     backpack="DARG_LTD_Contractor_Crewmen_pack";
   };
 
-  class DARG_LTD_Contractor_Heli_Pilot: I_G_Soldier_F
+  class DARG_LTD_Contractor_Heli_Pilot: I_helipilot_F
   {
     faction="DARG_LTD_DARG_Security_LTD";
     side=2;
@@ -221,14 +228,14 @@ class cfgVehicles
     respawnWeapons[]={"Binocular","DARG_LTD_hgun_PDW2000_F","DARG_LTD_hgun_Pistol_01_F","Put","Throw"};
     items[]={"FirstAidKit","FirstAidKit","FirstAidKit"};
     respawnItems[]={"FirstAidKit","FirstAidKit","FirstAidKit"};
-    magazines[]={"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
-    respawnMagazines[]={"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
+    magazines[]={"10Rnd_9x21_Mag","10Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
+    respawnMagazines[]={"10Rnd_9x21_Mag","10Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Tank_eaf_F","V_Rangemaster_belt","G_Combat"};
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Tank_eaf_F","V_Rangemaster_belt","G_Combat"};
     backpack="DARG_LTD_Contractor_Heli_Pilot_pack";
   };
 
-  class DARG_LTD_Contractor_Pilot_: I_G_Soldier_F
+  class DARG_LTD_Contractor_Pilot_: I_pilot_F
   {
     faction="DARG_LTD_DARG_Security_LTD";
     side=2;
@@ -238,14 +245,14 @@ class cfgVehicles
     respawnWeapons[]={"Binocular","DARG_LTD_hgun_PDW2000_F","DARG_LTD_hgun_Pistol_01_F","Put","Throw"};
     items[]={"FirstAidKit","FirstAidKit","FirstAidKit"};
     respawnItems[]={"FirstAidKit","FirstAidKit","FirstAidKit"};
-    magazines[]={"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
-    respawnMagazines[]={"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
+    magazines[]={"10Rnd_9x21_Mag","10Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
+    respawnMagazines[]={"10Rnd_9x21_Mag","10Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShellBlue","SmokeShell","SmokeShell","30Rnd_9x21_Mag","30Rnd_9x21_Mag"};
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Tank_eaf_F","V_Rangemaster_belt","G_Combat"};
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Tank_eaf_F","V_Rangemaster_belt","G_Combat"};
     backpack="DARG_LTD_Contractor_Pilot__pack";
   };
 
-  class DARG_LTD_Contractor_JTAC: I_G_Soldier_SL_F
+  class DARG_LTD_Contractor_JTAC: B_CTRG_Soldier_JTAC_tna_F
   {
     faction="DARG_LTD_DARG_Security_LTD";
     side=2;
@@ -262,7 +269,7 @@ class cfgVehicles
     backpack="DARG_LTD_Contractor_JTAC_pack";
   };
 
-  class DARG_LTD_Contractor_Sharpshooter: I_G_Soldier_F
+  class DARG_LTD_Contractor_Sharpshooter: I_G_Sharpshooter_F
   {
     faction="DARG_LTD_DARG_Security_LTD";
     side=2;
@@ -272,8 +279,8 @@ class cfgVehicles
     respawnWeapons[]={"Laserdesignator","DARG_LTD_srifle_DMR_06_hunter_F_optic_KHS_old","DARG_LTD_hgun_Pistol_01_F","Put","Throw"};
     items[]={"FirstAidKit","FirstAidKit","FirstAidKit"};
     respawnItems[]={"FirstAidKit","FirstAidKit","FirstAidKit"};
-    magazines[]={"10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","SmokeShellBlue","SmokeShell","SmokeShell","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag"};
-    respawnMagazines[]={"10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","SmokeShellBlue","SmokeShell","SmokeShell","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag"};
+    magazines[]={"10Rnd_9x21_Mag","10Rnd_9x21_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","SmokeShellBlue","SmokeShell","SmokeShell","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag"};
+    respawnMagazines[]={"10Rnd_9x21_Mag","10Rnd_9x21_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","SmokeShellBlue","SmokeShell","SmokeShell","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag"};
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Laserdesignator","H_Booniehat_khk_hs","V_BandollierB_khk","G_Bandanna_khk"};
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Laserdesignator","H_Booniehat_khk_hs","V_BandollierB_khk","G_Bandanna_khk"};
     backpack="DARG_LTD_Contractor_Sharpshooter_pack";
@@ -519,6 +526,7 @@ class cfgVehicles
 
 // DAGR Security a poor PMC
 // vanilla version
+
 class cfgGroups
 {  
   class INDEP
@@ -701,24 +709,17 @@ class cfgGroups
             position[]={0,-5,0};
           };
         };
-        class DAGR_LTD_R_Sharpshooter_JTAC_Team
+        class DAGR_LTD_R_Offroad_Radios_Sharpshoot_and_JTAC
         {
-          name="Sharpshooter JTAC Team";
+          name="Offroad Radios Sharpshoot and JTAC";
           faction="DAGR_LTD_DAGR_Security_LTD";
           side=2;
           class Unit0
           {
             side=2;
-            vehicle="DARG_LTD_Contractor_JTAC";
-            rank="PRIVATE";
-            position[]={0,-0,0};
-          };
-          class Unit1
-          {
-            side=2;
             vehicle="DARG_LTD_Contractor_Sharpshooter";
             rank="PRIVATE";
-            position[]={0,-5,0};
+            position[]={0,-0,0};
           };
         };
       };
@@ -738,6 +739,41 @@ class cfgGroups
             rank="PRIVATE";
             position[]={0,-0,0};
           };
+          class Unit1
+          {
+            side=2;
+            vehicle="DARG_LTD_Squad_Leader_PDW";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+          class Unit2
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-30,0};
+          };
+          class Unit3
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-45,0};
+          };
+          class Unit4
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-60,0};
+          };
+          class Unit5
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-75,0};
+          };
         };
         class DAGR_LTD_R_Offroad_Reinforcements
         {
@@ -751,18 +787,60 @@ class cfgGroups
             rank="PRIVATE";
             position[]={0,-0,0};
           };
+          class Unit1
+          {
+            side=2;
+            vehicle="DARG_LTD_Squad_Leader_PDW";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+          class Unit2
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-30,0};
+          };
+          class Unit3
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-45,0};
+          };
+          class Unit4
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-60,0};
+          };
+          class Unit5
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-75,0};
+          };
         };
-        class DAGR_LTD_R_Offroad_Radios_Sharpshoot_and_JTAC
+        class DAGR_LTD_R_Offroad_Radios_Sharpshoot_and_JTA
         {
-          name="Offroad Radios Sharpshoot and JTAC";
+          name="Offroad Radios Sharpshoot and JTA";
           faction="DAGR_LTD_DAGR_Security_LTD";
           side=2;
           class Unit0
           {
             side=2;
-            vehicle="DARG_LTD_Offroad_Radios";
+            vehicle="DARG_LTD_Contractor_JTAC";
             rank="PRIVATE";
             position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=2;
+            vehicle="DARG_LTD_Offroad_Radios";
+            rank="PRIVATE";
+            position[]={0,-15,0};
           };
         };
       };
@@ -785,6 +863,26 @@ class cfgGroups
       {
         name="Support Infantry";
 
+        class DAGR_LTD_R_Sharpshooter_JTAC_Team
+        {
+          name="Sharpshooter JTAC Team";
+          faction="DAGR_LTD_DAGR_Security_LTD";
+          side=2;
+          class Unit0
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_JTAC";
+            rank="MAJOR";
+            position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_Sharpshooter";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+        };
       };
       class Airborne
       {
@@ -799,4 +897,3 @@ class cfgGroups
     };
   };
 };
-

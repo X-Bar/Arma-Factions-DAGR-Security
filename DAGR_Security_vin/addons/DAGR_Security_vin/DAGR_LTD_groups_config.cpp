@@ -180,24 +180,17 @@ class cfgGroups
             position[]={0,-5,0};
           };
         };
-        class DAGR_LTD_R_Sharpshooter_JTAC_Team
+        class DAGR_LTD_R_Offroad_Radios_Sharpshoot_and_JTAC
         {
-          name="Sharpshooter JTAC Team";
+          name="Offroad Radios Sharpshoot and JTAC";
           faction="DAGR_LTD_DAGR_Security_LTD";
           side=2;
           class Unit0
           {
             side=2;
-            vehicle="DARG_LTD_Contractor_JTAC";
-            rank="PRIVATE";
-            position[]={0,-0,0};
-          };
-          class Unit1
-          {
-            side=2;
             vehicle="DARG_LTD_Contractor_Sharpshooter";
             rank="PRIVATE";
-            position[]={0,-5,0};
+            position[]={0,-0,0};
           };
         };
       };
@@ -217,6 +210,41 @@ class cfgGroups
             rank="PRIVATE";
             position[]={0,-0,0};
           };
+          class Unit1
+          {
+            side=2;
+            vehicle="DARG_LTD_Squad_Leader_PDW";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+          class Unit2
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-30,0};
+          };
+          class Unit3
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-45,0};
+          };
+          class Unit4
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-60,0};
+          };
+          class Unit5
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-75,0};
+          };
         };
         class DAGR_LTD_R_Offroad_Reinforcements
         {
@@ -230,18 +258,60 @@ class cfgGroups
             rank="PRIVATE";
             position[]={0,-0,0};
           };
+          class Unit1
+          {
+            side=2;
+            vehicle="DARG_LTD_Squad_Leader_PDW";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+          class Unit2
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-30,0};
+          };
+          class Unit3
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-45,0};
+          };
+          class Unit4
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-60,0};
+          };
+          class Unit5
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_PDW";
+            rank="PRIVATE";
+            position[]={0,-75,0};
+          };
         };
-        class DAGR_LTD_R_Offroad_Radios_Sharpshoot_and_JTAC
+        class DAGR_LTD_R_Offroad_Radios_Sharpshoot_and_JTA
         {
-          name="Offroad Radios Sharpshoot and JTAC";
+          name="Offroad Radios Sharpshoot and JTA";
           faction="DAGR_LTD_DAGR_Security_LTD";
           side=2;
           class Unit0
           {
             side=2;
-            vehicle="DARG_LTD_Offroad_Radios";
+            vehicle="DARG_LTD_Contractor_JTAC";
             rank="PRIVATE";
             position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=2;
+            vehicle="DARG_LTD_Offroad_Radios";
+            rank="PRIVATE";
+            position[]={0,-15,0};
           };
         };
       };
@@ -264,6 +334,26 @@ class cfgGroups
       {
         name="Support Infantry";
 
+        class DAGR_LTD_R_Sharpshooter_JTAC_Team
+        {
+          name="Sharpshooter JTAC Team";
+          faction="DAGR_LTD_DAGR_Security_LTD";
+          side=2;
+          class Unit0
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_JTAC";
+            rank="MAJOR";
+            position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=2;
+            vehicle="DARG_LTD_Contractor_Sharpshooter";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+        };
       };
       class Airborne
       {
