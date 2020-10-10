@@ -808,7 +808,7 @@ class cfgGroups
           class Unit5
           {
             side=2;
-            vehicle="DARG_LTD_Contractor_PDW";
+            vehicle="DARG_LTD_Contractor_Combat_Medic";
             rank="PRIVATE";
             position[]={0,-75,0};
           };
@@ -856,7 +856,7 @@ class cfgGroups
           class Unit5
           {
             side=2;
-            vehicle="DARG_LTD_Contractor_PDW";
+            vehicle="DARG_LTD_Contractor_Combat_Medic";
             rank="PRIVATE";
             position[]={0,-75,0};
           };

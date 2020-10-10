@@ -29,6 +29,7 @@ X Move JTAC sharpshooter team to support forces
 X Fix JTAC back to men category -> moved to special forces
 - Faction name (config.cpp) is super long...?
 / Add medic
+/ Add medic to reinforcements
 
 Issues
 
