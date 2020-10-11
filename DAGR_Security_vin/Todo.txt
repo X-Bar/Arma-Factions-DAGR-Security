@@ -36,7 +36,10 @@ X Get pictures for steam page
 
 
 Issues
-- portraits for editor, coded and build... dont seem to work? tested on medic
+- portraits for editor, coded and build... dont seem to work? tested on medic. 
+- uniforms require the mod "Universal Uniforms"
+- random uniforms do not work. 
+
 
 Other changes
 2020 10 09 - changed most men inheritiances from FIA to AAF and NATO. Hoping this helps uniforms and faces
