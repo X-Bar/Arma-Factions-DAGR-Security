@@ -134,12 +134,13 @@ class cfgVehicles
   class C_Offroad_01_F;
   class C_Offroad_01_repair_F;
   class I_Mortar_01_F;
+  
 
   class DARG_LTD_Officer: B_officer_F
   {
     faction="DARG_LTD_DARG_Security_LTD";
     side=2;
-    displayName="Officer";
+    displayName="Executive";
     uniformClass="U_Marshal";
     weapons[]={"Binocular","DARG_LTD_hgun_Pistol_heavy_02_F_acc_flashlight_pistol","Put","Throw"};
     respawnWeapons[]={"Binocular","DARG_LTD_hgun_Pistol_heavy_02_F_acc_flashlight_pistol","Put","Throw"};
@@ -167,6 +168,15 @@ class cfgVehicles
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","NVGoggles","Binocular","H_Booniehat_khk_hs","V_TacVestIR_blk","G_Tactical_Black","NVGoggles"};
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","NVGoggles","Binocular","H_Booniehat_khk_hs","V_TacVestIR_blk","G_Tactical_Black","NVGoggles"};
     backpack="DARG_LTD_Squad_Leader_PDW_pack";
+    
+    
+    class EventHandlers; // for random gear
+    class EventHandlers : EventHandlers 
+    {
+		init = "(_this select 0) execVM ""\DAGR_Security_vin\script\random_squadleader.sqf""";
+		//~ init = "(_this select 0) execVM ""\DAGR_Security_vin\script\random_squadleader.sqf"";(_this select 0) execVM ""\DAGR_Security_vin\script\random_squadleader.sqf""";
+	};
+    
   };
 
   class DARG_LTD_Contractor_PDW: I_Soldier_lite_F
@@ -303,6 +313,9 @@ class cfgVehicles
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Cap_usblack","V_TacVestIR_blk","G_WirelessEarpiece_F"};
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Cap_usblack","V_TacVestIR_blk","G_WirelessEarpiece_F"};
     backpack="DARG_LTD_Contractor_Combat_Medic_pack";
+    
+    portrait = "\DAGR_Security_vin\data\ui\port_medic.paa";
+    
   };
 
   class DARG_LTD_Van_Transport: C_Van_02_transport_F
