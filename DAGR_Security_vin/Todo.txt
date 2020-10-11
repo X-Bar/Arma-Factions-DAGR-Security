@@ -33,6 +33,7 @@ X Fix JTAC back to men category -> moved to special forces
 - Randomize uniforms riflemen and SL
 X Get pictures for steam page
 - Get more pictures for steam after random uniforms are done
+- Add faction for blufor and opfor
 
 
 Issues

@@ -28,6 +28,20 @@ class cfgFactionClasses
     side=2;
     priority=1;
   };
+  class b_DARG_LTD_DARG_Security_LTD
+  {
+    icon="";
+    displayName="DARG Security LTD";
+    side=0;
+    priority=1;
+  };
+  class o_DARG_LTD_DARG_Security_LTD
+  {
+    icon="";
+    displayName="DARG Security LTD";
+    side=1;
+    priority=1;
+  };
 };
 
 
@@ -139,7 +153,8 @@ class cfgVehicles
   class DARG_LTD_Officer: B_officer_F
   {
     faction="DARG_LTD_DARG_Security_LTD";
-    side=2;
+    side=2; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+    //~ side={3,2,1,0}; // sadly does not work
     displayName="Executive";
     uniformClass="U_Marshal";
     weapons[]={"Binocular","DARG_LTD_hgun_Pistol_heavy_02_F_acc_flashlight_pistol","Put","Throw"};
@@ -151,6 +166,14 @@ class cfgVehicles
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_MilCap_gry","V_Rangemaster_belt","G_Squares_Tinted"};
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_MilCap_gry","V_Rangemaster_belt","G_Squares_Tinted"};
     backpack="DARG_LTD_Officer_pack";
+  };
+  class	o_DARG_LTD_Officer : DARG_LTD_Officer
+  {
+    side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class	b_DARG_LTD_Officer : DARG_LTD_Officer
+  {
+    side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
   };
 
   class DARG_LTD_Squad_Leader_PDW: B_Soldier_SL_F
@@ -178,6 +201,14 @@ class cfgVehicles
 	};
     
   };
+  class o_DARG_LTD_Squad_Leader_PDW: DARG_LTD_Squad_Leader_PDW
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_Squad_Leader_PDW: DARG_LTD_Squad_Leader_PDW
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
 
   class DARG_LTD_Contractor_PDW: I_Soldier_lite_F
   {
@@ -194,6 +225,14 @@ class cfgVehicles
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Cap_oli_hs","V_TacVest_blk","G_Bandanna_sport"};
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Cap_oli_hs","V_TacVest_blk","G_Bandanna_sport"};
     backpack="DARG_LTD_Contractor_PDW_pack";
+  };
+  class o_DARG_LTD_Contractor_PDW: DARG_LTD_Contractor_PDW
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_Contractor_PDW: DARG_LTD_Contractor_PDW
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
   };
 
   class DARG_LTD_Contractor_Driver_: I_crew_F
@@ -212,6 +251,14 @@ class cfgVehicles
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Cap_blk_CMMG","V_TacVest_blk","G_WirelessEarpiece_F"};
     backpack="DARG_LTD_Contractor_Driver__pack";
   };
+  class o_DARG_LTD_Contractor_Driver_: DARG_LTD_Contractor_Driver_
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_Contractor_Driver_: DARG_LTD_Contractor_Driver_
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
 
   class DARG_LTD_Contractor_Crewmen: I_crew_F
   {
@@ -228,6 +275,14 @@ class cfgVehicles
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Tank_eaf_F","V_Rangemaster_belt","G_Lowprofile"};
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Tank_eaf_F","V_Rangemaster_belt","G_Lowprofile"};
     backpack="DARG_LTD_Contractor_Crewmen_pack";
+  };
+  class o_DARG_LTD_Contractor_Crewmen: DARG_LTD_Contractor_Crewmen
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_Contractor_Crewmen: DARG_LTD_Contractor_Crewmen
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
   };
 
   class DARG_LTD_Contractor_Heli_Pilot: I_helipilot_F
@@ -246,6 +301,14 @@ class cfgVehicles
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Tank_eaf_F","V_Rangemaster_belt","G_Combat"};
     backpack="DARG_LTD_Contractor_Heli_Pilot_pack";
   };
+  class o_DARG_LTD_Contractor_Heli_Pilot: DARG_LTD_Contractor_Heli_Pilot
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_Contractor_Heli_Pilot: DARG_LTD_Contractor_Heli_Pilot
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
 
   class DARG_LTD_Contractor_Pilot_: I_pilot_F
   {
@@ -262,6 +325,14 @@ class cfgVehicles
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Tank_eaf_F","V_Rangemaster_belt","G_Combat"};
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Binocular","H_Tank_eaf_F","V_Rangemaster_belt","G_Combat"};
     backpack="DARG_LTD_Contractor_Pilot__pack";
+  };
+  class o_DARG_LTD_Contractor_Pilot_: DARG_LTD_Contractor_Pilot_
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_Contractor_Pilot_: DARG_LTD_Contractor_Pilot_
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
   };
 
   class DARG_LTD_Contractor_JTAC: B_recon_JTAC_F
@@ -281,6 +352,14 @@ class cfgVehicles
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","NVGoggles","Laserdesignator","H_Booniehat_khk_hs","V_TacChestrig_cbr_F","G_Bandanna_khk","NVGoggles"};
     backpack="DARG_LTD_Contractor_JTAC_pack";
   };
+  class o_DARG_LTD_Contractor_JTAC: DARG_LTD_Contractor_JTAC
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_Contractor_JTAC: DARG_LTD_Contractor_JTAC
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
 
   class DARG_LTD_Contractor_Sharpshooter: B_Recon_Sharpshooter_F
   {
@@ -297,6 +376,14 @@ class cfgVehicles
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Laserdesignator","H_Booniehat_khk_hs","V_BandollierB_khk","G_Bandanna_khk"};
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","Laserdesignator","H_Booniehat_khk_hs","V_BandollierB_khk","G_Bandanna_khk"};
     backpack="DARG_LTD_Contractor_Sharpshooter_pack";
+  };
+  class o_DARG_LTD_Contractor_Sharpshooter: DARG_LTD_Contractor_Sharpshooter
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_Contractor_Sharpshooter: DARG_LTD_Contractor_Sharpshooter
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
   };
   
   class DARG_LTD_Contractor_Combat_Medic: I_medic_F
@@ -317,6 +404,14 @@ class cfgVehicles
     portrait = "\DAGR_Security_vin\data\ui\port_medic.paa";
     
   };
+  class o_DARG_LTD_Contractor_Combat_Medic: DARG_LTD_Contractor_Combat_Medic
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_Contractor_Combat_Medic: DARG_LTD_Contractor_Combat_Medic
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
 
   class DARG_LTD_Van_Transport: C_Van_02_transport_F
   {
@@ -326,6 +421,14 @@ class cfgVehicles
     hiddenSelectionsTextures[]={"a3\soft_f_orange\van_02\data\van_body_black_co.paa","a3\soft_f_orange\van_02\data\van_wheel_transport_co.paa","a3\soft_f_orange\van_02\data\van_glass_transport_ca.paa","a3\soft_f_orange\van_02\data\van_body_black_co.paa"};
     crew="DARG_LTD_Contractor_Driver_";
     typicalCargo[]={"DARG_LTD_Contractor_Driver_"};
+  };
+  class o_DARG_LTD_Van_Transport: DARG_LTD_Van_Transport
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_Van_Transport: DARG_LTD_Van_Transport
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
   };
 
   class DARG_LTD_Offroad_Radios: C_Offroad_01_comms_F
@@ -337,6 +440,14 @@ class cfgVehicles
     crew="DARG_LTD_Contractor_Driver_";
     typicalCargo[]={"DARG_LTD_Contractor_Driver_"};
   };
+  class o_DARG_LTD_Offroad_Radios: DARG_LTD_Offroad_Radios
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_Offroad_Radios: DARG_LTD_Offroad_Radios
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
 
   class DARG_LTD_WY55_Hellcat: I_Heli_light_03_unarmed_F
   {
@@ -346,6 +457,14 @@ class cfgVehicles
     hiddenSelectionsTextures[]={"a3\air_f_epb\heli_light_03\data\heli_light_03_base_co.paa"};
     crew="DARG_LTD_Contractor_Heli_Pilot";
     typicalCargo[]={"DARG_LTD_Contractor_Heli_Pilot"};
+  };
+  class o_DARG_LTD_WY55_Hellcat: DARG_LTD_WY55_Hellcat
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_WY55_Hellcat: DARG_LTD_WY55_Hellcat
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
   };
 
   class DARG_LTD_Cessna: C_Plane_Civil_01_F
@@ -357,6 +476,14 @@ class cfgVehicles
     crew="DARG_LTD_Contractor_Pilot_";
     typicalCargo[]={"DARG_LTD_Contractor_Pilot_"};
   };
+  class o_DARG_LTD_Cessna: DARG_LTD_Cessna
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_Cessna: DARG_LTD_Cessna
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
 
   class DARG_LTD_Offroad: C_Offroad_01_F
   {
@@ -366,6 +493,14 @@ class cfgVehicles
     hiddenSelectionsTextures[]={"a3\soft_f\offroad_01\data\offroad_01_ext_base05_co.paa","a3\soft_f\offroad_01\data\offroad_01_ext_base05_co.paa"};
     crew="DARG_LTD_Contractor_Driver_";
     typicalCargo[]={"DARG_LTD_Contractor_Driver_"};
+  };
+  class o_DARG_LTD_Offroad: DARG_LTD_Offroad
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_Offroad: DARG_LTD_Offroad
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
   };
 
   class DARG_LTD_Offroad_service: C_Offroad_01_repair_F
@@ -377,6 +512,14 @@ class cfgVehicles
     crew="DARG_LTD_Contractor_Driver_";
     typicalCargo[]={"DARG_LTD_Contractor_Driver_"};
   };
+  class o_DARG_LTD_Offroad_service: DARG_LTD_Offroad_service
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_Offroad_service: DARG_LTD_Offroad_service
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
 
   class DARG_LTD_Mk6_mortar: I_Mortar_01_F
   {
@@ -386,6 +529,14 @@ class cfgVehicles
     hiddenSelectionsTextures[]={"a3\static_f\mortar_01\data\mortar_01_co.paa"};
     crew="DARG_LTD_Contractor_Driver_";
     typicalCargo[]={"DARG_LTD_Contractor_Driver_"};
+  };
+  class o_DARG_LTD_Mk6_mortar: DARG_LTD_Mk6_mortar
+  {
+	  side=0; // 0=opfor, 1=bluefor, 2=indep, 3-civ
+  };
+  class b_DARG_LTD_Mk6_mortar: DARG_LTD_Mk6_mortar
+  {
+	  side=1; // 0=opfor, 1=bluefor, 2=indep, 3-civ
   };
 
 
@@ -953,4 +1104,16 @@ class cfgGroups
       };
     };
   };
+  
+  class OPFOR : INDEP
+  {
+	  
+  };
+  
+  class BLUFOR : INDEP
+  {
+	  
+  };
+  
+  
 };
