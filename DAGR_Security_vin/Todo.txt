@@ -34,6 +34,7 @@ X Fix JTAC back to men category -> moved to special forces
 X Get pictures for steam page
 - Get more pictures for steam after random uniforms are done
 X Add faction for blufor and opfor
+- Update unit ranks
 
 
 Issues
